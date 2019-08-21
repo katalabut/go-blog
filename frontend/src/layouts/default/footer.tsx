@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Footer: React.FC = ({ children }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="has-text-centered">
