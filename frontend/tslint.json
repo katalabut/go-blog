@@ -8,6 +8,7 @@
     "prettier": true,
     "interface-name": false,
     "ordered-imports": false,
-    "interface-over-type-literal": false
+    "interface-over-type-literal": false,
+    "jsx-no-lambda": false
   }
 }
