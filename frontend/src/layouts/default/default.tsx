@@ -7,9 +7,7 @@ const Default: React.FC = ({ children }) => {
   return (
     <div className="app">
       <Header />
-      <main>
-        <div className="container">{children}</div>
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

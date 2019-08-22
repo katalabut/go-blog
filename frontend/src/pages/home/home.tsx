@@ -1,7 +1,15 @@
 import React from 'react';
 
-const Default: React.FC = () => {
-  return <div className="home">Home</div>;
+import NewsItem from '../../component/news-item';
+
+const Home: React.FC = () => {
+  return (
+    <div className="blog-list section">
+      <NewsItem />
+      <NewsItem />
+      <NewsItem />
+    </div>
+  );
 };
 
-export default Default;
+export default Home;
