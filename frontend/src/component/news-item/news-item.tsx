@@ -1,26 +1,46 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const NewsItem: React.FC = () => {
+type Props = {
+  author: string;
+  date: string;
+  link: string;
+  title: string;
+  content?: string;
+  image?: string;
+};
+
+const NewsItem: React.FC<Props> = ({
+  author,
+  content,
+  date,
+  link,
+  title,
+  image,
+}) => {
   return (
     <article className="news-item">
-      <div
-        className="news-item__cover"
-        style={{
-          backgroundImage:
-            'url("https://bulma.io/images/placeholders/640x480.png");',
-        }}
-      ></div>
-      <h3 className="title">Настраиваем ESlin + Prettier для React</h3>
-      <h5 className="subtitle is-6" style={{ marginBottom: '0.5em' }}>
-        @spoooty <small>31m</small>
+      {image ? (
+        <div
+          className="news-item__cover"
+          style={{
+            backgroundImage: 'url("' + image + '")',
+          }}
+        >
+          <Link to={link} />
+        </div>
+      ) : null}
+
+      <h3 className="news-item__title subtitle is-3">
+        <Link to={link}>{title}</Link>
+      </h3>
+      <h5
+        className="news-item__subtitle subtitle"
+        style={{ marginBottom: '0.5em' }}
+      >
+        @{author} <small>{date}</small>
       </h5>
-      <div className="content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          efficitur sit amet massa fringilla egestas. Nullam condimentum luctus
-          turpis.
-        </p>
-      </div>
+      <div className="content">{content}</div>
     </article>
   );
 };

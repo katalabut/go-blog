@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
-    <nav className="navbar">
+    <nav className="header navbar">
       <div className="container">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
