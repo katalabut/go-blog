@@ -23,12 +23,12 @@
 
 .news-item .news-item__title {
   margin-top: 10px;
-  margin-bottom: 0px;
 }
 .news-item .news-item__title a {
   color: #000;
 }
 
 .news-item .news-item__subtitle {
+  margin-top: -20px;
   font-size: 0.9em;
 }
