@@ -8,7 +8,7 @@ interface IDefaultProps {
   exact?: boolean;
 }
 
-const LayoutRoute: React.FC<IDefaultProps> = ({
+export const LayoutRoute: React.FC<IDefaultProps> = ({
   layout: Layout,
   component: Component,
   ...rest
@@ -24,5 +24,3 @@ const LayoutRoute: React.FC<IDefaultProps> = ({
     />
   );
 };
-
-export default LayoutRoute;
