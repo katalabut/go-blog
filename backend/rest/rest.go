@@ -33,7 +33,7 @@ func (rst *Rest) routes() http.Handler {
 
 	r.Route("/api/v1", func(rapi chi.Router) {
 		// rapi.Use(render.SetContentType(render.ContentTypeJSON))
-		rapi.Get("/posts", postCtrl)
+		rapi.Get("/posts", postsCtrl)
 	})
 
 	return r
