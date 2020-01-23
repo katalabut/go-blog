@@ -1,6 +1,6 @@
 package main
 
-import "github.com/spoooty/rocketcode/backend/rest"
+import "github.com/katalabut/go-blog/backend/rest"
 
 func main() {
 	srv := &rest.Rest{}

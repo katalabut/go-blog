@@ -1,4 +1,4 @@
-module github.com/spoooty/rocketcode/backend
+module github.com/katalabut/go-blog/backend
 
 go 1.12
 
